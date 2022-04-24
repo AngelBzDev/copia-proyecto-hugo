@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --background: #25282a;
+  --yellow: #ffd33c;
+  --white: #ffffff;
+  --black: #1a1c1e;
+  --yellowShadow: #f79a00;
+  --blueShadow: #133453;
+  --blue: #51a1c2;
+  --strongGray: #303434;
+  --grayTransparent: #303434a6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: var(--background);
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* Helpers */
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../../public/img/polygon-scatter-haikei.svg);
+}
+
+.btn {
+  padding: 1.6rem;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: var(--yellow);
+  margin: 2.5rem 0;
+}
+
+/* Formulario */
+
+.form {
+  background: var(--strongGray);
+  padding: 5.5rem 4rem;
+  width: 450px;
+  border-radius: 15px;
+  border: 2px solid var(--blue)
+}
+
+.form__title {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-weight: 800;
+}
+
+.form__info {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__inputs--input {
+  border: none;
+  padding: 0 1.6rem;
+  margin-bottom: 2.5rem;
+  background: var(--background);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.form__inputs--input:focus-within{
+  border: 2px solid var(--yellow);
+}
+
+.form__inputs--input input{
+  background: transparent;
+  border: none;
+  padding: 1.6rem 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: var(--white);
+  width: 90%;
+}
+
+.form__inputs--input input:focus{
+  outline: none;
+}
+
+.form__info--social {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.social__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.social {
+  padding: 1rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.social:hover {
+  background: var(--blue);
+  color: var(--black);
+}
+
+.social p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 0.7rem;
+}
+
+.form__info--register {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.form__info--register a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--blue);
+  font-style: normal;
+}
